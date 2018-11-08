@@ -1,0 +1,382 @@
+* { 
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+    font-size: 100%;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;  
+    transition: 0.5s;
+}
+
+body.night{
+    background: #00151f;
+}
+
+/* Bouton toggle pour l'effet jour/nuit */
+
+.mode {
+    color: #fff;
+    margin-top: 30px;
+    margin-right: 15px;
+    float: right;
+}
+
+.toggle {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 20px; 
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+
+}
+
+.toggle.active {
+    background: #000;
+    border: 2px solid #cc3300;
+}
+
+.toggle:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.toggle.active:before {
+    left: 27px;
+    background: #fff;
+}
+
+/*Navbar*/
+
+header {
+    background:url(action-blur-city-590701.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+nav { 
+
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    line-height:60px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding-right: 42px;
+
+}
+
+nav ul li {
+
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 16px;
+}
+
+
+body.night nav ul li a {
+    color: #cc3300;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 48px;
+    float: left;
+    margin: 16px 48px;
+    color: #fff ;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+body.night .logo {
+    color: #cc3300;
+}
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 350px;
+    color: #fff;
+}
+
+body.night h1 {
+    color: #666666;
+}
+ 
+ .image {
+    width: 80%;
+    margin: 50px auto;
+ }
+
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    text-align: justify;
+    color: #666666; 
+}
+
+.lead {
+    float: right;
+    margin-top: 40px;
+    color: #666666; 
+    font-size: 15px;
+}
+
+
+nav.black {
+   background: #000;
+   padding-bottom: 10px;
+}
+
+
+/*Timeline*/
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+
+.text {
+    color: #fff; 
+    font-size: 40px; 
+    text-shadow: 2px 2px 4px black; 
+}
+
+body.night .text {
+    color: #fff; 
+    text-shadow: 2px 2px 4px #cc3300; 
+}
+
+body.night .title {
+    color: #cc3300; 
+}
+
+body.night .info {
+    color: #666666; 
+}
+
+body.night .type {
+    color: #666666; 
+}
+
+.etude {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000;
+    padding-top: 50px;
+   
+}
+
+body.night .etude {
+    color: #cc3300;
+}
+.container {
+    width: 100%;
+}
+
+.content1, .content2, .content3, .content4 {
+    padding-right: 405px;
+    padding-left: 405px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container ul:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    border: 1px dashed #aaa;
+}
+
+.container ul li {
+    margin: 50px 60px;
+    position: relative;
+}
+
+.container ul li > span{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 0px;
+    height: 100%;
+    border: 1px solid #aaa;
+}
+
+.container ul li > span:before, .container ul li > span:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #aaa;
+    position: absolute;
+    border-radius: 50%;
+    left: -7px;
+    background: #000;
+}
+
+
+body.night .container ul li > span:before, body.night  .container ul li > span:after {
+    background: #cc3300;
+}
+
+.container ul li > span:before{
+    top: -10px;
+}
+
+.container ul li > span:after{
+    
+    top: 100%;
+}
+
+.container ul li .time span {
+    position: absolute;
+    font-size: 12px;
+    left: -105px;
+    width: 30px;
+    text-align: right;
+    color: #777;
+}
+
+body.night .container ul li .time span {
+    color: #777;
+}
+
+.container ul li .time span:first-child {
+    top: -12px;
+}
+
+.container ul li .time span:last-child {
+    top: 100%;
+}
+
+.container2 {
+
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-gap: 20px;
+}
+
+.description {
+    margin-top: 50px;
+    margin-right: 350px;
+}
+
+.container3 {
+     margin: 0 auto;
+     width: 650px;
+}
+
+.lead {
+    margin-bottom: 70px;
+}
+
+.gras {
+    font-size: 70px;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+}
+
+
+body.night img {
+    box-shadow: 10px 5px 5px #cc3300;
+}
+
+.to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background:#000;
+    color: #fff;
+    padding: 9px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline;
+    margin-bottom: 80px;
+}
+
+body.night .to-top {
+    background:#cc3300;
+    color: #fff;
+}
+
+
+.to-top:hover {
+    background: #d7d7d7;
+    color: #000;
+}
+
+body.night .to-top:hover {
+    background: #d7d7d7;
+    color: #000;
+}
+
+.fab {
+    font-size: 35px;
+}
+.img2 {
+    height: 60px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+body.night .img2 {
+    height: 60px;
+    border-radius: 0;
+    box-shadow: none;
+}

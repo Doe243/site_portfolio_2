@@ -7,42 +7,94 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
     <title>Portfolio - René Mumba</title>
 </head>
+
+<style>
+    
+</style>
 <body>
-    <header id="top">
-        <nav>
-
-            <a href="#" class="logo"><\Code life></a>
-            <p class="mode">Changer mode :</p>
-            <div class="toggle"></div>
+   <!-- NAVBAR -->
+    <header id="top"> 
+        <video autoplay loop poster="" id="bgvid">
+             <source src="assets/media/code_types.mp4" type="video/mp4">
+        </video>
+        <div class="toggle">
+                <i class="fas fa-bars menus"></i>
+        </div>
+        <nav>  
+           
+            <a href="index.html" class="logo"><\Code life></a>
+            <!--<p class="mode lang" key="modes">Changer mode :</p>-->
+            <div class="toggles"></div>
+            
             <div class="menu">
+              
               <ul>
+                  <li><a href="index.html" key="accueil" class="lang">Accueil</a></li>
+                  <li><a href="#propos" key="moi" class="lang">Moi</a></li>
+                  <li><a href="#etudes" key="etudes" class="lang">Mes études</a></li>
+                  <li><a href="#experiences"key="experiences" class="lang">Expériences pro</a></li>
+                  <li><a href="#langues" key="langues" class="lang">Langages utilisés</a></li>
 
-                  <li><a href="#home">Accueil</a></li>
-                  <li><a href="#news">Mes études</a></li>
-                  <li><a href="#contact">Expériences pro</a></li>
-                  <li><a href="#about">Langages utilisés</a></li>
-                  <li><a href="#projets">Projets</a></li>
+                  <li><a href="#ge" ><img class="translate" id="ge" src="assets/image/de.png" alt="" height="28" width="30"></a></li>
+                  <li><a href="#en" ><img class="translate" id="en" src="assets/image/en.png" alt="" height="28" width="30"></a></li>
+                  <li><a href="#fr" ><img class="translate" id="fr" src="assets/image/fr.png" alt="" height="28" width="30"></a></li>
+                  <li><a href="#cd" ><img class="translate" id="cd" src="assets/image/cd.png" alt="" height="28" width="30"></a></li>
 
               </ul>
           </div>
-
+         
       </nav>
+  
+      
+  <h1 class="text lang" key="bienvenue">Bienvenue sur mon site portfolio </h1>
+  <br><br>
+  <p class="titre"><\Code life></p> 
 
-      <h1 class="text">Bienvenue sur mon site portfolio <br><br><br><span class="gras"><\Code life></span></h1>
-  </header>
+ </header>
+ <!-- FIN NAVBAR -->
+
 
   <div class="container">
 
-    <h1 class="etude">Mes études <i class="fas fa-user-graduate"></i></h1>
+    <!-- A PROPOS DE MOI -->
+
+<h1 class="etude5 lang" key="etude" id="propos">A propos de moi  </h1> <i class="fas fa-user-tie icon"></i>
+<div class="content4">
+<div class="container2">
+
+    <div class="image">
+
+        <img src="assets/image/001.jpg" alt="" width=250>
+    </div>  
+
+    <div class="type3" >
+        <p class="description type3 lang" key="description">Développeur web Fullstack curieux, motiver et passionner par les nouvelles technologies, j'aime les applications simples, rapides et efficaces. <br>
+
+        Actuellement en licence professionnelle en alternance à l'IUT 1 de grenoble, je suis déterminer à acquérir des bases solides et devenir le meilleur dans mon domaine qui est l'informatique. <br>
+
+        Je n'ai pas peur de réléver des défis parce que c'est comme ça que l'on devient meilleur dans ce que l'on fait !</p>
+        <p class="description"><i>René MUMBA K.</i></p>
+    </div>
+
+</div>
+
+</div>
+
+<!-- FIN A PROPOS DE MOI -->
+
+    <!--SECTION ETUDES -->
+
+    <h1 class="etude lang" key="etudes" id="etudes" >Mes études </h1><i class="fas fa-user-graduate icon"></i>
     <div class="content1">
           <ul>
         <li>
             <span></span>
-            <div class="title">Licence Professionnelle Informatique</div>
-            <div class="info">IUT 1 Grenoble</div>
-            <div class="type">Developpement web, androîd et IOS</div>
+            <div class="title lang" key="title">Licence Professionnelle Informatique</div>
+            <div class="info lang" key="info">IUT 1 Grenoble</div>
+            <div class="type lang" key="type">Developpement web, androîd et IOS</div>
             <div class="time">
                 <span>2019</span>
                 <span style="font-size: 15px;margin-top: 12px;font-weight: bold;">2018</span>
@@ -52,9 +104,9 @@
 
         <li>
             <span></span>
-            <div class="title">2 ème Année de Brevet de Technicien Supérieur Système Numérique</div>
-            <div class="info">Lycée du Grésivaudan Meylan</div>
-            <div class="type">Informatique et Réseau</div>
+            <div class="title lang" key="title2">2 ème Année de Brevet de Technicien Supérieur Système Numérique</div>
+            <div class="info lang" key="info2">Lycée du Grésivaudan Meylan</div>
+            <div class="type lang" key="type2">Informatique et Réseau</div>
             <div class="time">
 
                 <span style="font-size: 15px;margin-top: 12px;font-weight: bold;">2017</span>
@@ -64,9 +116,9 @@
 
         <li>
             <span></span>
-            <div class="title">1 ère Année de Brevet de Technicien Supérieur Système Numérique</div>
-            <div class="info">Lycée du Grésivaudan Meylan</div>
-            <div class="type">Informatique et Réseau</div>
+            <div class="title lang" key="title3">1 ère Année de Brevet de Technicien Supérieur Système Numérique</div>
+            <div class="info lang" key="info3">Lycée du Grésivaudan Meylan</div>
+            <div class="type lang" key="type3">Informatique et Réseau</div>
             <div class="time">
                 <span style="font-size: 15px;margin-top: 12px;font-weight: bold;">2016</span>
             </div>
@@ -74,32 +126,39 @@
 
         <li>
             <span></span>
-            <div class="title">Terminale STI2D (Sciences et Technologies de l'Industrie et du Développement Durable)</div>
-            <div class="info">Lycée Vaucanson Grenoble</div>
-            <div class="type">Système Informatique et Numérique</div>
+            <div class="title lang" key="title4">Terminale STI2D (Sciences et Technologies de l'Industrie et du Développement Durable)</div>
+            <div class="info lang" key="info4">Lycée Vaucanson Grenoble</div>
+            <div class="type lang" key="type4">Système Informatique et Numérique</div>
             <div class="time">
                 <span>2015</span>
             </div>
         </li>
 
     </ul>  
-
     </div>
-    
+
+    <!-- FIN SECTION ETUDES -->
 
 
+    <!-- EXPERIENCES PROFESSIONNELLES-->
 
-
-    <h1 class="etude">Expériences professionnelles <i class="fas fa-building"></i></h1>
+    <h1 class="etude lang" key="etude2" id="experiences">Expériences professionnelles </h1><i class="fas fa-building icon"></i>
     <div class="content2">
     <ul>
 
-
      <li>
         <span></span>
-        <div class="title">Département de la Savoie &nbsp;&nbsp;<img class="img2" src="assets/image/1187px-Logo_Département_Savoie.svg.png" alt="" height=50></div><br>
-        <div class="info">Développeur Fullstack (web et mobile)</div><br>
-        <div class="type">Langages : HTML, CSS, PHP (ZendFramework), Javascript, JQuery</div>
+        <div class="title lang" key="title5">Département de la Savoie</div><br>
+        <img class="img2" src="assets/image/1187px-Logo_Département_Savoie.svg.png" alt="" height=50><br><br>
+        <div class="info lang" key="info5"><strong>Développeur Fullstack (web et mobile</strong>)</div><br>
+        <div class="type type1 lang" key="type5">Langages : </div> 
+        <ul>
+                <li class="color">HTML  <i class="fab fa-html5"></i></li>
+                <li class="color">CSS  <i class="fab fa-css3-alt"></i></li>
+                <li class="color">PHP (ZendFramework) <i class="fab fa-php"></i></li>
+                <li class="color">Javascript  <i class="fab fa-js-square"></i></li>
+                <li class="color">JQuery</li>
+        </ul>    
         <div class="time">
             <span>2019</span>
             <span style="font-size: 15px;margin-top: 12px;font-weight: bold;">2018</span>
@@ -108,29 +167,98 @@
 
     <li>
         <span></span>
-        <div class="title">Orange Unité d'Intervention Alpes (UI ALPES) &nbsp;&nbsp;<img class="img2" src="assets/image/Orange_logo.svg" alt="" height=50></div><br>
-        <div class="info">Développeur web</div><br>
-        <div class="type">Langages : HTML, CSS, PHP (OFT : Orange Framework and Tool), Javascript, JQuery</div>
+        <div class="title lang" key="title6">Orange Unité d'Intervention Alpes (UI ALPES)</div><br>
+        <img class="img2" src="assets/image/Orange_logo.svg" alt="" height=50><br><br>
+        <div class="info lang" key="info6"><strong>Développeur web</strong></div><br>
+        <div class="type type1 lang" key="type6">Langages : </div>
+
+        <ul>
+                <li class="color">HTML  <i class="fab fa-html5"></i></li>
+                <li class="color">CSS  <i class="fab fa-css3-alt"></i></li>
+                <li class="color">PHP (OFT : Orange Framework and Tool) <i class="fab fa-php"></i></li>
+                <li class="color">Javascript  <i class="fab fa-js-square"></i></li>
+                <li class="color">JQuery</li>
+        </ul> 
+            
         <div class="time">
 
             <span>2016</span>
         </div>
     </li>
 
+    <li>
+            <span></span>
+            <div class="title lang" key="title7">Alteck Informatique</div><br>
+            <img class="img2" src="assets/image/alteck1.png" alt="" height=50><br><br>
+            <div class="info lang" key="info7"><strong>Stage Informatique</strong> </div><br>
+            
+        <ul>
+                <li class="color">Maintenance informatique</li>
+                <li class="color">Accueil des clients</li>
+        </ul> 
+            
+            <div class="time">
+    
+                <span>2015</span>
+                <span>2014</span>
+            </div>
+        </li>
 </ul>  
 </div>
+<!-- FIN EXPERIENCES PROFESSIONNELLES-->
 
+<!-- LANGUES UTILISES-->
 
-<h1 class="etude">Langages utilisés  <i class="fas fa-code"></i></h1>
+<h1 class="etude lang" key="etude3" id="langues">Langages utilisés </h1> <i class="fas fa-code icon"></i>
 <div class="content3">
 <ul>
 
 
  <li>
     <span></span>
-    <div class="title">Mes langages de programmations et Frameworks</div><br><br>
-    <div class="info">Développeur web et mobile (Android et IOS)</div>
-    <div class="type"><br><br><strong>Langages</strong> : <br>- HTML  <i class="fab fa-html5"></i>, <br>- CSS  <i class="fab fa-css3-alt"></i>, <br>- PHP <i class="fab fa-php"></i>,<br>- Javascript  <i class="fab fa-js-square"></i>,<br>- JQuery,<br>- Node JS  <i class="fab fa-node"></i>,<br>- JAVA  <i class="fab fa-java"></i>,<br>- Rust <br><br><br> <strong>Frameworks</strong> : <br>- Symfony 4 / Laravel  <i class="fab fa-laravel"></i>, <br>- Ruby on rails, <br>- Bootstrap, <br>- Bulma  <br><br><br><strong>Outils</strong> : <br>- Git,<br>- Gulp,<br>- Sass <i class="fab fa-sass"></i>, <br>- PHPStorm, <br>- Sublim text 3, <br>- Visual Code Studio, <br>- Kraken, <br>- Photoshop,<br>- Adobe XD   <br><br><br><strong>Base de données</strong> :  <br>- Laragon, <br>- MySql, <br>- WAMP, <br>- Heidisql, <br>- Oracle</div>
+    <div class="title lang" key="title8">Mes langages de programmations et Frameworks</div><br><br>
+    <div class="info lang" key="info8"><strong>Développeur web et mobile (Android et IOS)</strong></div><br>
+    <div class="type type1 lang" key="type8">Langages :</div> 
+    <ul>
+        <li class="color">HTML  <i class="fab fa-html5"></i></li>
+        <li class="color">CSS  <i class="fab fa-css3-alt"></i></li>
+        <li class="color">PHP <i class="fab fa-php"></i></li>
+        <li class="color">Javascript  <i class="fab fa-js-square"></i></li>
+        <li class="color">JQuery</li>
+        <li class="color">JAVA  <i class="fab fa-java"></i></li>
+        <li class="color">Rust</li>
+        <li class="color">Node JS  <i class="fab fa-node"></i></li>
+    </ul>
+
+
+    <div  class="type type1 lang" key="type9" >Frameworks :</div>
+    <ul>
+            <li class="color">Symfony 4 / Laravel  <i class="fab fa-laravel"></i></li>
+            <li class="color">Ruby on rails</li>
+            <li class="color">Bootstrap</li>
+            <li class="color">Bulma </li>
+        </ul>
+    <div  class="type type1 lang" key="type10" >Outils :</div> 
+
+    <ul>
+            <li class="color">Git</li>
+            <li class="color">Gulp</li>
+            <li class="color">Sass <i class="fab fa-sass"></i></li>
+            <li class="color">PHPStorm</li>
+            <li class="color">Sublim text 3</li>
+            <li class="color">Visual Code Studio</li>
+            <li class="color">Kraken</li>
+            <li class="color">Photoshop</li>
+            <li class="color">Adobe XD</li>
+    </ul>
+    <div  class="type type1 lang" key="type11" >Base de données :</div>  
+    <ul>
+            <li class="color">Laragon</li>
+            <li class="color">MySql</li>
+            <li class="color">WAMP</li>
+            <li class="color">Heidisql</li>
+            <li class="color">Oracle</li>  
+    </ul>
     <div class="time">
         <span>2019</span>
         <span>2016</span>
@@ -139,30 +267,11 @@
 
 </ul>  
 </div>
+<!-- FIN LANGUES UTILISES-->
 
 
-<h1 class="etude">A propos de moi  <i class="fas fa-user-tie"></i></h1>
-<div class="content4">
-<div class="container2">
 
-    <div class="image">
-
-        <img src="assets/image/001.jpg" alt="" width=250>
-    </div>  
-
-    <div class="description">
-        <p>Développeur web Fullstack curieux, motiver et passionner par les nouvelles technologies, j'aime les applications simples, rapides et efficaces.</p>
-
-        <p>Actuellement en licence professionnelle en alternance à l'IUT 1 de grenoble, je suis déterminer à acquérir des bases solides et devenir le meilleur dans mon domaine qui est l'informatique.</p>
-
-        <p>Je n'ai pas peur de réléver des défis parce que c'est comme ça que l'on devient meilleur dans ce que l'on fait !</p>
-        <p class="lead"><i>René MUMBA K.</i></p>
-    </div>
-
-</div>
-
-</div>
-
+<!-- FOOTER -->
 <div class="copyright">
     <div class="container3">
       <i class="lead">Copyright &copy; René Mumba Kibutika - Développeur web Fullstack</i>
@@ -170,56 +279,13 @@
 </div>
 </div>
 
+<!-- FIN FOOTER -->
+
 <div class="container4">
     <a href="#top" class="to-top"><i class="fas fa-chevron-up"></i></a>
 </div>
-
- 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('.toggle').click(function() {
-            $('.toggle').toggleClass('active')
-            $('body').toggleClass('night')
-        });
-    });
-
-
-    $(window).on("scroll", function() 
-    {
-        if($(window).scrollTop()) 
-        {
-            $('nav').addClass('black');
-        }
-
-        else 
-        {
-            $('nav').removeClass('black');
-        }
-    });
-
-
-    $(document).ready(function() {
-        var offset = 250;
-        var duration = 500;
-
-        $(window).scroll(function() {
-            if($(this).scrollTop() > offset) {
-                $('.to-top').fadeIn(duration);
-            }
-        });
-
-        $('.to-top').click(function() {
-            $('body').animate({scrollTop: 0}, duration);
-        })
-    })
-
-</script>
-
-
-
-
+<script src="assets/js/main.js"></script>
 <script async type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/5f2cde47f82ac3aca1ecae502eb81e791757ffefa4ed637e838a3a13174e865c.js"></script>
 </body>
 </html>

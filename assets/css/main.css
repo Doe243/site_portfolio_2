@@ -22,6 +22,18 @@ body.night{
     background: #00151f;
 }
 
+p.titre {
+    margin-top: 150px;
+    font-size:150px; 
+    text-shadow:10px 5px 5px #666; 
+    color:#fff;
+    text-align: center;
+}
+
+
+body.night p.titre {
+    text-shadow:10px 5px 5px #cc3300; 
+}
 /* Bouton toggle pour l'effet jour/nuit */
 
 .mode {
@@ -31,7 +43,7 @@ body.night{
     float: right;
 }
 
-.toggle {
+.toggles {
     position: absolute;
     top: 40px;
     right: 50px;
@@ -48,12 +60,24 @@ body.night{
 
 }
 
-.toggle.active {
+.toggle {
+    
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+.toggles.active {
     background: #000;
     border: 2px solid #cc3300;
 }
 
-.toggle:before{
+.toggles:before{
     content: '';
     position: absolute;
     top: 2px;
@@ -65,20 +89,20 @@ body.night{
     transition: 0.5s;
 }
 
-.toggle.active:before {
+.toggles.active:before {
     left: 27px;
     background: #fff;
 }
 
 /*Navbar*/
 
-header {
-    background:url(action-blur-city-590701.jpg);
+/*header {
+    background: url(/assets/media/code_types.mp4);
     background-size: cover;
     background-position: center;
     height: 100vh;
 
-}
+}*/
 
 nav { 
 
@@ -102,9 +126,24 @@ nav ul li {
     font-size: 16px;
 }
 
+video#bgvid {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    
+  }
 
 body.night nav ul li a {
     color: #cc3300;
+}
+
+body.night li.color {
+    color: #666;
 }
 
 nav ul li a {
@@ -141,6 +180,15 @@ h1 {
 body.night h1 {
     color: #666666;
 }
+
+i.icon {
+    font-size: 48px;
+    margin-left: 950px;
+}
+
+body.night i.icon {
+    color: #666666;
+}
  
  .image {
     width: 80%;
@@ -161,6 +209,12 @@ p {
     margin-top: 40px;
     color: #666666; 
     font-size: 15px;
+    font-weight: bold;
+}
+
+body.night .lead {
+    color: #cc3300; 
+    font-weight: bold;
 }
 
 
@@ -177,10 +231,44 @@ nav.black {
     color: #000;
 }
 
+body.night .title {
+    color: #cc3300; 
+}
+
+.type {
+    font-size: 15px;
+    color: #000;
+
+}
+body.night .type {
+    color: #666666; 
+}
+
+
+.info {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+
+body.night .info {
+    color: #666666; 
+}
+
+
+.type1 {
+    font-weight: bold;
+}
+
+
+body.night .type1 {
+    color: #cc3300; 
+}
+
 .text {
     color: #fff; 
     font-size: 40px; 
-    text-shadow: 2px 2px 4px black; 
+    text-shadow:10px 5px 5px #666; 
 }
 
 body.night .text {
@@ -188,30 +276,36 @@ body.night .text {
     text-shadow: 2px 2px 4px #cc3300; 
 }
 
-body.night .title {
-    color: #cc3300; 
-}
-
-body.night .info {
-    color: #666666; 
-}
-
-body.night .type {
-    color: #666666; 
-}
 
 .etude {
+    margin-top: 50px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 50px;
     color: #000;
-    padding-top: 50px;
+    padding-top: 0;
+   
+}
+
+
+.etude5 {
+    margin-top: 350px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000;
+    padding-top: 0;
    
 }
 
 body.night .etude {
     color: #cc3300;
 }
+
+body.night .etude5 {
+    color: #cc3300;
+}
+
 .container {
     width: 100%;
 }
@@ -322,18 +416,14 @@ body.night .container ul li .time span {
     margin-bottom: 70px;
 }
 
-.gras {
-    font-size: 70px;
-}
 
 img {
     border-radius: 10px;
     box-shadow: 10px 5px 5px black;
 }
 
-
 body.night img {
-    box-shadow: 10px 5px 5px #cc3300;
+    box-shadow: 2px 1px 1px #3d312d;
 }
 
 .to-top {
@@ -380,3 +470,84 @@ body.night .img2 {
     border-radius: 0;
     box-shadow: none;
 }
+
+
+
+@media (max-width:768px)
+{
+    nav {
+        position: relative;
+        z-index: 1;
+    }
+    .toggle {
+        display: block;
+    }
+
+    .logo {
+        width: 100%;
+    }
+    nav ul {
+        width: 100%;
+        display: none;
+        background-color: #000;
+        position: fixed;
+    }
+
+    nav ul li {
+        display: grid;
+        grid-gap: 50px 100px;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
+    nav ul li a {
+        margin-left: 50px;
+    }
+    nav ul li a img {
+        margin-left: 30px;
+    }
+
+    .mode {
+        color: #fff;
+    margin-top: -30px;
+    margin-right: 15px;
+    float: right;
+    }
+    .click-menu{
+        display: block;
+    }
+
+    .text {
+        text-align: left;
+        margin: 100px 0 100px 30px;
+    }
+
+    p.titre {
+        font-size: 70px;
+        text-align: center;
+        margin: 100px 0 100px 30px;
+        width: 90%;
+    }
+
+    .etude5 {
+        font-size: 48px;
+        width: 90%;
+        text-align: center;
+    }
+
+     
+     .image {
+        width: 100%;
+        margin:1%;
+     }
+    
+    
+    .description {
+        font-size: 12px;
+        width: 90%;
+    }
+    
+   
+    
+
+}
+
